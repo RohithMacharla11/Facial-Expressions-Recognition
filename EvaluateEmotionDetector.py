@@ -21,6 +21,7 @@ print("Loaded model from disk")
 # Initialize image data generator with rescaling
 test_data_gen = ImageDataGenerator(rescale=1./255)
 
+
 # Preprocess all test images
 test_generator = test_data_gen.flow_from_directory(
         'data/test',
